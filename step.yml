@@ -1,4 +1,4 @@
-title: Restore Cocoapods Cache (Beta)
+title: Restore Cocoapods Cache
 summary: Restores cached Cocoapods dependencies. This Step needs to be used in combination with **Save Cocoapods Cache**.
 description: |
   Restores cached Cocoapods dependencies. This Step needs to be used in combination with **Save Cocoapods Cache**.
