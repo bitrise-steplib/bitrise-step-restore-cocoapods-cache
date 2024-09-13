@@ -9,7 +9,7 @@ import (
 	"github.com/bitrise-io/go-utils/v2/errorutil"
 	"github.com/bitrise-io/go-utils/v2/exitcode"
 	"github.com/bitrise-io/go-utils/v2/log"
-	"github.com/bitrise-steplib/steps-restore-cocoapods-cache/step"
+	"github.com/bitrise-steplib/bitrise-step-restore-cocoapods-cache/step"
 )
 
 func main() {
