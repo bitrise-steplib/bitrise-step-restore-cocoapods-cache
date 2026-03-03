@@ -9,7 +9,7 @@ Restores cached Cocoapods dependencies. This Step needs to be used in combinatio
 
 Restores cached Cocoapods dependencies. This Step needs to be used in combination with **Save Cocoapods Cache**.
 
-This Step is based on [key-based caching](https://devcenter.bitrise.io/en/builds/caching/key-based-caching.html) and sets up the cache key and path automatically for Cocoapods dependencies. If you'd like to change the cache keys, you might want to use the generic [Restore cache](https://github.com/bitrise-steplib/bitrise-step-restore-cache) Step instead.
+This Step is based on [key-based caching](https://docs.bitrise.io/en/bitrise-ci/dependencies-and-caching/key-based-caching.html) and sets up the cache key and path automatically for Cocoapods dependencies. If you'd like to change the cache keys, you might want to use the generic [Restore cache](https://github.com/bitrise-steplib/bitrise-step-restore-cache) Step instead.
 
 #### Related steps
 
@@ -47,6 +47,7 @@ Check out [Workflow Recipes](https://github.com/bitrise-io/workflow-recipes#-key
 | --- | --- | --- | --- |
 | `verbose` | Enable logging additional information for troubleshooting | required | `false` |
 | `retries` | Number of retries to attempt when downloading a cache archive fails.  The value 0 means no retries are attempted. | required | `3` |
+| `timeout` | Timeout in seconds | required | `600` |
 </details>
 
 <details>
