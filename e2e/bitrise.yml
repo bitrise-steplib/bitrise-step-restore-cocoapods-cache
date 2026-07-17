@@ -19,7 +19,7 @@ workflows:
         is_skippable: false
         inputs:
         - key: |-
-            {{ .Arch }}-cocoapods-cache-{{ checksum "**/Podfile.lock" }}
+            {{ getenv "BITRISEIO_STACK_ID" }}-cocoapods-cache-{{ checksum "**/Podfile.lock" }}
         - paths: Pods
         - verbose: "true"
     - script:
@@ -35,6 +35,8 @@ workflows:
         is_skippable: false
         inputs:
         - verbose: "true"
+        - key: |-
+            {{ getenv "BITRISEIO_STACK_ID" }}-cocoapods-cache-{{ checksum "**/Podfile.lock" }}
     - cocoapods-install:
         title: Install Cocoapods again
 
